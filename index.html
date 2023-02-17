@@ -11,18 +11,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://kit.fontawesome.com/a02174024b.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
   </head>
-  <body class="bg-gray-100 p-2 mx-1  sm:mx-10 md:mx-2 text-xs lg:mx-2">
+  <body class="bg-gray-100 px-6">
     <!-- header -->
-    <header class="container flex items-center mx-4 mb-10 xl:mx-1">
-      <div class="flex p-1 cursor-pointer gap-3">
+    <header class="container flex py-6 items-center xl:mx-1">
+      <div class="flex cursor-pointer gap-3">
         <img src="imgs/icon.png" />
         <h3 class="mt-1">Eduvi</h3>
       </div>
-      <div class="flex pl-8">
+      <span class="flex flex-1 justify-end"
+        ><i class="text-xl fa-solid fa-bars"></i
+      ></span>
+      <div class="flex hidden pl-8">
         <ul class="hidden sm:flex flex-1 items-center pl-2 mb-1 gap-6 lg:gap-6">
           <li class="cursor-pointer">Shop</li>
           <li class="cursor-pointer">For kindergarten</li>
@@ -32,19 +39,16 @@
         </ul>
 
         <ul
-          class="hidden sm:flex pl-2 gap-2 text-base lg:pl-12 gap-6 justify-self-end"
+          class="hidden sm:flex pl-2 w-40 gap-2 text-base lg:pl-12 justify-end"
         >
           <li class="cursor-pointer text-xs">Cart</li>
           <li class="cursor-pointer text-xs">My Account</li>
         </ul>
       </div>
-      <div class="flex sm:hidden justify-end">
-        <i class="fa fa-bars"></i>
-      </div>
     </header>
     <!-- Never Stop Learning -->
-    <section class="sm:flex mx-4">
-      <div class="w">
+    <section class="sm:flex mt-3">
+      <div class="max-w-4xl">
         <span class="bg-white p-2 text-red-400 rounded-lg text-xs"
           >Never Stop Learning</span
         >
@@ -57,14 +61,16 @@
           barriers togetting a degree.
         </p>
         <div
-          class="w-fit mx-auto mt-12 flex bg-white rounded-lg text-xs sm:w-full"
+          class="w-fit mx-auto justify-between mt-12 flex bg-white rounded-lg text-xs sm:w-full"
         >
-          <div class="flex p-2">
-            <h3 class="text-blue-600 gap-4 pr-3 text-xs">kindergarten</h3>
+          <div class="flex p-4 justify-between gap-3 sm:gap-12">
+            <h3 class="flex align-center text-blue-600 gap-4 text-xs">
+              kindergarten
+            </h3>
             <h3 class="text-purple-600 text-xs">Class/Course</h3>
           </div>
-          <div class="px-2 flex justify-end">
-            <button class="bg-purple-700 text-white ml-4 my-1 rounded p-2">
+          <div class="flex justify-end">
+            <button class="bg-purple-700 text-white ml-4 rounded p-4">
               Search
             </button>
           </div>
@@ -75,7 +81,7 @@
       </div>
     </section>
     <!-- high quality video -->
-    <section class="text-center mx-auto sm:max-w-md my-6">
+    <section class="text-center sm:max-w-md my-6">
       <h1 class="text-cyan-900 py-1 text-4xl max-w-4xl font-medium mb-4">
         High quality video, audio & live classes
       </h1>
@@ -86,29 +92,47 @@
         480px vertical scan lines or 576 vertical lines is considered
         high-definition.
       </p>
-      <button
-        class="bg-purple-700 p-4 rounded-md border-none text-white w-fit mx-s"
-      >
+      <button class="bg-purple-700 p-4 rounded-md border-none text-white w-fit">
         Visit Courses
       </button>
     </section>
     <!-- video class -->
     <section class="relative w-11/12 mx-auto">
-      <img src="./imgs/Video call.png" />
-      <div class="flex mx-auto w-11/12  top-6">
-        <div class=" flex mx-2 p-2 rounded bg-white gap-2">
+      <img class="h-3/4" src="./imgs/Video call.png" />
+      <div class="flex justify-center align-center gap-2 top-24">
+        <div class=" py-2 px-1 rounded bg-white sm:ml-2">
           <img></img>
           <p>Audio Classes</p>
         </div>
-        <div class="flex mx-2 p-2 rounded bg-white gap-2">
+        <div class=" py-2 px-1 rounded bg-white">
           <img></img>
           <p>Live Classes</p>
         </div>
-        <div class="flex mx-2 text-xs p-3 sm:p-2 rounded bg-white gap-2">
+        <div class=" py-2 px-1 sm:p-2 rounded  bg-white ">
           <img></img>
           <p>Recorded Class</p>
         </div>
       </div>
+    </section>
+    <!-- qualified lesson -->
+    <section class="mt-12">
+      <h2 class="text-4xl font-semi-bold flex justify-center">Qualified lesson for students</h2>
+      <p class="flex justify-center align-center my-6">A lesson or class is a structured period of time where learning is intended to occur. It involves one or more students being taught by a teacher or instructor. </p>
+      <!-- qualified lesson button -->
+      <div class="flex align-center justify-center gap-8 mb-8">
+        <button>Kindergarten</button>
+        <button class="bg-red-400 px-1 py-2 color-white rounded text-white">High School</button>
+        <button>College</button>
+      </div>
+    </section>
+    <!-- standard section -->
+    <section  class="grid col-2">
+      <div class="bg-white  justify-center">
+        <span class="flex justify-center rounded-full mx-auto flex-1 bg-yellow-400">1</span>
+        <p>Standard 1 is a foundation Standard that reflects 7 important concepts...</p>
+        <button>Class Details</button>
+      </div>
+
     </section>
   </body>
 </html>
