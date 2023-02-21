@@ -30,19 +30,19 @@
         ><i class="text-xl fa-solid fa-bars"></i
       ></span>
       <div class="hidden pl-3 md:flex  justify-evenly lg:mx-12 ">
-        <ul class="flex flex-1 items-center px-2 justify-evenly gap-1 text-purple-700  text-xs lg:gap-2 lg:text-base">
+        <ul class="flex flex-1 items-center px-1 justify-evenly space-x-1.5  text-xs lg:gap-6 lg:text-xs">
           <li class="cursor-pointer">Shop</li>
-          <li class="cursor-pointer">For kindergarten<i class="text-sm text-purple-700 p-1 fa-solid fa-chevron-down"></i></li>
-          <li class="cursor-pointer">For High School<i class=" p-1 fa-solid fa-chevron-down"></i></li>
-          <li class="cursor-pointer">For College<i class="p-1 fa-solid fa-chevron-down"></i></li>
-          <li class="cursor-pointer">Courses<i class="p-1 fa-solid fa-chevron-down"></i></li>
+          <li class="flex gap-1  cursor-pointer">For kindergarten<img class="mt-1  w-2 h-2" src="imgs/Vector.png"/></li>
+          <li class="flex gap-1 cursor-pointer">For High School<img class="mt-1 w-2 h-2" src="imgs/Vector.png"/></i></li>
+          <li class="flex gap-1 cursor-pointer">For College<img class="mt-1 w-2 h-2" src="imgs/Vector.png"/></i></li>
+          <li class="flex gap-1 cursor-pointer">Courses<img class="mt-1 w-2 h-2" src="imgs/Vector.png"/></i></li>
         </ul>
 
         <ul
-          class="hidden md:flex align-center text-purple-700 align-center justify-between mx-3 text-xs gap-6 lg: justify-between lg:gap-4"
+          class="hidden md:flex align-center pt-3 align-center justify-evenly mx-3 text-xs gap-2 lg: justify-between lg:gap"
         >
-          <li class="cursor-pointer text-xs">Cart(0)<i class="fa-solid fa-bag-shopping"></i></li>
-          <li class="cursor-pointer text-xs">My Account<i class="fa-solid fa-user"></i></li>
+          <li class="flex align-center cursor-pointer text-xs">Cart(0)<img class="w-1/2 h-1/2" src="imgs/Outline.png"/></li>
+          <li class="flex  align-center cursor-pointer text-xs">Account<img class="w-1/5 h-1/2" src="imgs/account.png"/> </li>
         </ul>
       </div>
     </header>
@@ -98,20 +98,13 @@
     </section>
     <!-- video class -->
     <section class="relative w-11/12 mx-auto">
-      <img class="h-3/4" src="./imgs/Video call.png" />
-      <div class="flex justify-center align-center gap-2 top-24">
-        <div class=" py-2 px-1 rounded bg-white sm:ml-2">
-          <img></img>
-          <p>Audio Classes</p>
-        </div>
-        <div class=" py-2 px-1 rounded bg-white">
-          <img></img>
-          <p>Live Classes</p>
-        </div>
-        <div class=" py-2 px-1 sm:p-2 rounded  bg-white ">
-          <img></img>
-          <p>Recorded Class</p>
-        </div>
+      <div class=" w-fit  h-fit">
+        <img class=" w-fit h-fit " src="./imgs/Video call.png" />
+      </div>
+      <div class="absolute -bottom-16 mb-24 flex align-center justify-evenly mx-auto w-full h-fit gap-3">
+        <button class="bg-white px-1 py-2 rounded">Audio class</button>
+        <button class="bg-white px-1 py-2 rounded">Live classes</button>
+        <button class="bg-white px-1 py-2 rounded">Recorded class</button>
       </div>
     </section>
     <!-- qualified lesson -->
@@ -126,7 +119,7 @@
       </div>
     </section>
     <!-- standard section -->
-    <section  class="grid grid-cols-2 gap-5 lg:grid grid-cols-4">
+    <section  class="grid grid-cols-2 gap-5 lg:grid-cols-4">
       <div class="bg-white justify-center rounded-md">
         <img class="flex justify-center mx-auto w-8 h-8 my-4" src="imgs/Group.png"></img>
         <h1 class="text-extra-bold text-2xl w-9/12 flex justify-center mx-auto">Standard One</h1>
@@ -196,23 +189,25 @@
     <div class="flex justify-center">
       <button class=" mt-12 bg-purple-700 text-white rounded-md p-3 w-2/5 mx-auto">View More Classes</button>
     </div>
-    <section class=" bg-gray-200 mt-6">
-      <div class="p-4 ">
+    <section class=" bg-gray-200 mt-6 md:grid grid-cols-2 spaces-8">
+      <div class="px-6 pb-12 pt-4 ">
         <span class="bg-red-200 mt-2 text-purple-500 p-2 w-fit">College Leaver</span>
         <h1 class="flex align-center justify-center text-3xl mt-4 font-medium">Don't waste time in COVID-19 pandemic.Develop your skills.</h1>
         <p class="mt-4">High-definition video is video of high resolution and quality than standard-definition. While there is no standardized meaning for high-definition, generally any video.</p>
         <button class="bg-purple-700 text-white w-fit px-3 py-2 rounded-md mt-12">Registration Now</button>
       </div>
-      <div class="relative">
-        <img class="object-center z-10" src="imgs/Image (4).png"/>
-        <img class="absolute bottom-1" src="imgs/Ellipse 170.png"/>
-        <img class="absolute top-0.5 bg-white left-2.5" src="imgs/Pattern.png"/>
+      <div class="relative flex justify-end">
+        <img class=" pt-12 w-9/12 z-10" src="imgs/Image (4).png"/>
+        <img class="absolute bottom-1 ml-3 pt-12" src="imgs/Ellipse 170.png"/>
+        <img class="absolute top-6 right-44 w-1/5" src="imgs/Pattern.png"/>
       </div>
       
     </section>
     <!-- want to share your knowledge -->
-    <section class="sm:bg-white">
-      <img class="hidden" src="imgs/Image (5).png"/>
+    <section class="sm:bg-white md:grid grid-cols-2 space-x-8 p-12">
+      <div>
+      <img class="hidden md:block" src="imgs/Image (5).png"/>
+      </div>
       <div class="mt-4 ">
         <h1 class="pt-5  text-3xl font-medium">Want to share your knolledge? join us a mentor</h1>
         <p class="pt-3">High-definition video is video of high resolution and quality than standard-definition. While there is no standardized meaning for high-definition, generally any video.</p>
@@ -227,12 +222,12 @@
         <img class="absolute" src="imgs/Ellipse 166 (1).png"/>
       </div> -->
       <div class="w-full px-0 mx-auto text-white rounded-lg bg-purple-900 h-64">
-        <h1 class="flex justify-center font-medium text-3xl p-4">Subscribe For Get update Every New Courses</h1>
-        <p class="p-5">20k+ students daily learn with Eduvi subscribe for new courses.</p>
-        <div class="flex flex-1 justify-between w-4/5 mx-auto mt-5  bg-indigo-200 rounded-lg">
+        <h1 class="flex justify-center w-96 mx-auto font-medium text-3xl p-4">Subscribe For Get update Every New Courses</h1>
+        <p class="flex justify-center w-96 mx-auto">20k+ students daily learn with Eduvi subscribe for new courses.</p>
+        <div class="flex flex-1 justify-between w-96 mx-auto mt-5  bg-indigo-200 rounded-lg">
           <h3 class="p-3 text-white">enter your email</h3>
-          <span class="flex flex-1 justify-end ">
-             <button class="p-2 bg-purple-700 ">Subscribe</button>
+          <span class="flex flex-1 justify-end w-4/5 mx-auto ">
+             <button class="p-2 bg-purple-700 rounded-r-md ">Subscribe</button>
           </span>
         </div>
       </div>
@@ -243,11 +238,11 @@
       </div>
     </section>
     <!-- footer -->
-    <footer class="grid grid-cols-2 text-purple-500">
-      <div class="hidden flex justify-center ">
+    <footer class="grid grid-cols-2 text-purple-500 mb-6 lg:flex gap-12">
+      <div class="hidden flex justify-center lg:block">
         <img src="imgs/Logo.png"/>
         <h1>Eduvi</h1>
-        <div class="">
+        <div class="flex gap-4 mt-5">
           <img src="imgs/facebook-logo 1.png"/>
           <img src="imgs/eight.png"/>
           <img src="imgs/Twitter Logo.png"/>
@@ -293,7 +288,7 @@
         <a class="block cursor-pointer">Help</a>
         <a class="block cursor-pointer">Contact</a>
       </div>
-      <div class="mt-7 w-full ">
+      <div class="mt-7 w-full md:hidden">
         <img src="imgs/Logo.png"/>
         <div class="flex gap-4 mt-5">
           <img src="imgs/facebook-logo 1.png"/>
@@ -302,7 +297,7 @@
           <img src="imgs/LinkedIn Icon.png"/>
         </div>
        <!-- copywright -->
-       <div class="mt-2 mb-5">
+       <div class=" mt-2 mb-5 ">
           <h3>2021 Eduvi.co</h3>
           <p>Eduvi is a registered trade mark of Eduvi.co</p>
         </div>
